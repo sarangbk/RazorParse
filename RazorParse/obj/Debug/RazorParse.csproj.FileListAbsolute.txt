@@ -1,0 +1,11 @@
+c:\users\sarang\documents\visual studio 2015\Projects\RazorParse\RazorParse\bin\Debug\RazorParse.exe.config
+c:\users\sarang\documents\visual studio 2015\Projects\RazorParse\RazorParse\obj\Debug\RazorParse.csprojResolveAssemblyReference.cache
+c:\users\sarang\documents\visual studio 2015\Projects\RazorParse\RazorParse\obj\Debug\RazorParse.frmMainForm.resources
+c:\users\sarang\documents\visual studio 2015\Projects\RazorParse\RazorParse\obj\Debug\RazorParse.Properties.Resources.resources
+c:\users\sarang\documents\visual studio 2015\Projects\RazorParse\RazorParse\obj\Debug\RazorParse.csproj.GenerateResource.Cache
+c:\users\sarang\documents\visual studio 2015\Projects\RazorParse\RazorParse\bin\Debug\RazorParse.exe
+c:\users\sarang\documents\visual studio 2015\Projects\RazorParse\RazorParse\bin\Debug\RazorParse.pdb
+c:\users\sarang\documents\visual studio 2015\Projects\RazorParse\RazorParse\bin\Debug\System.Web.Razor.dll
+c:\users\sarang\documents\visual studio 2015\Projects\RazorParse\RazorParse\bin\Debug\System.Web.Razor.xml
+c:\users\sarang\documents\visual studio 2015\Projects\RazorParse\RazorParse\obj\Debug\RazorParse.exe
+c:\users\sarang\documents\visual studio 2015\Projects\RazorParse\RazorParse\obj\Debug\RazorParse.pdb

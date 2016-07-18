@@ -1,0 +1,70 @@
+﻿@model IEnumerable<ACWeb.Models.NPArticleModel>
+@using Microsoft.WindowsAzure;
+
+    <!DOCTYPE HTML>
+
+    <html>
+    <head>
+        <title>
+
+        </title>
+        <script src="~/api/blob/templates/default/content/02-jquery.min.js"></script>
+        <script src="~/api/blob/templates/default/content/03-bootstrap.min.js"></script>
+        <script src="~/api/blob/templates/default/content/03-iframe-responsive.js"></script>
+        <link rel="stylesheet" href="~/api/blob/templates/default/content/01-bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="~/api/blob/templates/default/content/01-carousel.css?v=1" type="text/css">
+        <link rel="stylesheet" href="@ViewBag.SPHostWebUrl/_layouts/15/defaultcss.ashx" type="text/css">
+
+    </head>
+    <body>
+
+        <div id="anAggregation">
+            <div class="container-fluid news" id="ac-container">
+                @foreach (var article in Model)
+                {
+                <div class="row news-item">
+                    <div class="col-xs-3 col-sm-3 col-md-3">
+                        <a target="_top" href="@article.SPUrl">
+                            <img class="img-responsive img-responsive-details" src="@article.SPThumbnailPath" />
+                        </a>
+                    </div>
+                    <div class="col-xs-9 col-sm-9 col-md-9">
+                        <h2><a target="_top" href="@article.SPUrl">@article.TitleSummary(70)</a></h2>
+                        <div class="social-links">
+                            <ul>
+                                <li class="date">
+                                    @article.RelativePublishedDate
+                                </li>
+                                <li class="author">
+                                    <span>By @article.AuthorDisplayName</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="mg-t-5">
+                            @article.BodySummary(300)
+                        </p>
+                        <div class="social-links">
+                            <ul>
+                                <li class="search">
+                                    <span>@article.NumberOfViews</span>
+                                </li>
+                                <li class="like">
+                                    <span>@article.NumberOfLikes</span>
+                                </li>
+                                <li class="comments">
+                                    <span>@article.NumberOfComments</span>
+                                </li>
+                                <li class="tags">
+                                    <span>@article.EnterpriseKeywords</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                }
+            </div>
+
+        </div>
+
+    </body>
+</html>
